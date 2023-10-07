@@ -1,4 +1,4 @@
-import logoSrc from '../public/logo5transparent.webp';
+import logoSrc from '../public/home-image.webp';
 import Image from 'next/image';
 import { Instrument_Sans, Silkscreen } from 'next/font/google';
 import Link from 'next/link';
@@ -11,29 +11,29 @@ const silk = Silkscreen({
 
 export default function Hero() {
   return (
-    <div className="relative bg-primary border-terinary flex flex-col xl:flex-row items-center justify-between overflow-x-hidden">
-      <div className="w-screen py-24 xl:w-[70%] xl:py-12 z-0">
+    <div className="relative bg-primary flex flex-col items-center">
+      <div className="flex gap-2 flex-col text-center justify-center items-center py-12 px-12 xl:px-24 xl:py-24 2xl:px-56 2xl:py-24 ">
         <h1
-          className={`${silk.className} text-[36px] lg:text-[40px] max-w-[80%] relative left-[10%] z-9 xl:text-[48px] text-secondary pb-2 sm:pb-2 xl:pb-2 selection:bg-secondary selection:text-primary`}
+          className={`${silk.className} text-[2rem] md:text-[3rem] xl:text-[3.5rem] 2xl:text-[4rem] text-secondary`}
         >
           Full Stack Engineer
         </h1>
 
         <p
-          className={`${instrument.className} text-base text-lighterGrey max-w-[70%] relative left-[10%] z-9  selection:bg-secondary selection:text-primary`}
+          className={`${instrument.className} text-lighterGrey text-[.8em] md:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem] `}
         >
           I have a passion for developing comprehensive and scalable full-stack
           products that deliver outstanding user experiences.
         </p>
       </div>
 
-      <div className="image z-6 w-[100%] xl:w-[30%] flex justify-center py-24 xl:py-12 bg-secondary">
+      <div className="relative ">
         <Image
           src={logoSrc}
           alt="Nazrul Islam Photo"
           width={512}
           height={512}
-          className="z-8 relative xl:right-[50%] w-[384px] h-[384px] xl:w-[512px] xl:h-[512px]"
+          className="relative -bottom-12 z-6 flex justify-center rounded-full"
         />
       </div>
     </div>
