@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${instrument.className} bg-lightGrey`}>{children}</body>
+      <body className={`${instrument.className} bg-lighterGrey`}>{children}</body>
     </html>
   );
 }

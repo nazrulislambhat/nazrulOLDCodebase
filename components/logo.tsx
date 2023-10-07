@@ -10,7 +10,7 @@ export default function Logo() {
         alt="logo"
         width={512}
         height={512}
-        className="rounded-full cursor-pointer w-[64px] h-[64px]"
+        className="cursor-pointer rounded-full w-[64px] h-[64px]"
       />
     </Link>
   );

@@ -27,7 +27,7 @@ export default function Navigation() {
 
       {menuOpen && (
         <div
-          className={`${silk.className} absolute right-0 w-[16rem] bg-white sm:w-[20rem] overflow-y-hidden overflow-x-hidden  `}
+          className={`${silk.className} absolute right-0 w-[16rem] bg-white sm:w-[20rem] overflow-y-hidden overflow-x-hidden z-10 `}
         >
           <ul className="flex gap-2 flex-col items-center justify-center py-4">
             <li className=" hover:bg-primary hover:text-secondary max-w-fit py-2 px-4 cursor-pointer underline-offset-4 active:bg-red active:text-lightGrey">
