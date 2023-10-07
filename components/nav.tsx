@@ -19,7 +19,7 @@ export default function Navigation() {
   return (
     <div className="relative">
       <button
-        className="z-10 text-4xl text-secondary flex items-center justify-center"
+        className="z-10 text-4xl text-primary flex items-center justify-center"
         onClick={toggleMenu}
       >
         {menuOpen ? <CgClose /> : <CgMenuRight />}
