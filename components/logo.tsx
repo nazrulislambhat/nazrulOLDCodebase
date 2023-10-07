@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import logoSrc from '../public/logo.svg';
+import logoSrc from '../public/logo5transparent.webp';
 
 export default function Logo() {
   return (
@@ -8,9 +8,9 @@ export default function Logo() {
       <Image
         src={logoSrc}
         alt="logo"
-        width={50}
-        height={50}
-        className=" fill-white rounded-full bg-white color-red light:color-black dark:color-white"
+        width={512}
+        height={512}
+        className="rounded-full cursor-pointer w-[64px] h-[64px]"
       />
     </Link>
   );
