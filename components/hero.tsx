@@ -11,8 +11,8 @@ const silk = Silkscreen({
 
 export default function Hero() {
   return (
-    <div className="relative bg-primary border-terinary flex flex-col xl:flex-row items-center justify-between">
-      <div className="w-screen py-24 xl:w-[70%] xl:py-12">
+    <div className="relative bg-primary border-terinary flex flex-col xl:flex-row items-center justify-between overflow-x-hidden">
+      <div className="w-screen py-24 xl:w-[70%] xl:py-12 z-0">
         <h1
           className={`${silk.className} text-[36px] lg:text-[40px] max-w-[80%] relative left-[10%] z-9 xl:text-[48px] text-secondary pb-2 sm:pb-2 xl:pb-2 selection:bg-secondary selection:text-primary`}
         >
@@ -27,13 +27,13 @@ export default function Hero() {
         </p>
       </div>
 
-      <div className="image w-[100%] xl:w-[30%] flex justify-center py-24 xl:py-12 bg-secondary">
+      <div className="image z-6 w-[100%] xl:w-[30%] flex justify-center py-24 xl:py-12 bg-secondary">
         <Image
           src={logoSrc}
           alt="Nazrul Islam Photo"
           width={512}
           height={512}
-          className="z-5 relative xl:right-[50%] w-[384px] h-[384px] xl:w-[512px] xl:h-[512px]"
+          className="z-8 relative xl:right-[50%] w-[384px] h-[384px] xl:w-[512px] xl:h-[512px]"
         />
       </div>
     </div>
