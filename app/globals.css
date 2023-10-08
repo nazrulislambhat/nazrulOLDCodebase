@@ -7,3 +7,8 @@
   margin: 0;
   padding: 0;
 }
+.text-bg-gradient {
+  background: linear-gradient(to right, #ccf381, #4730d3);
+  -webkit-background-clip: text;
+  color: transparent;
+}
