@@ -27,7 +27,7 @@ export default function Hero() {
         </p>
       </div>
 
-      <div className="relative w-[70%] xl:w-[100vw]  flex justify-center ">
+      <div className="relative w-[70%] xl:w-[512px]  flex justify-center">
         <Image
           src={logoSrc}
           alt="Nazrul Islam Photo"
