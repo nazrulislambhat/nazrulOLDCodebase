@@ -1,15 +1,12 @@
 'use client';
 import Link from 'next/link';
-import { Silkscreen, Instrument_Sans } from 'next/font/google';
 import { useState } from 'react';
 import { CgMenuRight, CgClose } from 'react-icons/cg';
+import { Instrument_Sans, Bai_Jamjuree } from 'next/font/google';
 
 const instrument = Instrument_Sans({ subsets: ['latin'] });
-
-const silk = Silkscreen({
-  weight: '400',
-  subsets: ['latin'],
-});
+const jam500 = Bai_Jamjuree({ subsets: ['latin'], weight: '500' });
+const jam700 = Bai_Jamjuree({ subsets: ['latin'], weight: '700' });
 
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,7 +26,7 @@ export default function Navigation() {
 
       {menuOpen && (
         <div
-          className={`${silk.className} absolute right-0 top-12 w-96 h-fit bg-lighterGrey rounded-lg  overflow-y-hidden overflow-x-hidden z-10`}
+          className={`${jam500.className} absolute right-0 top-12 w-96 h-fit bg-lighterGrey rounded-lg  overflow-y-hidden overflow-x-hidden z-10`}
         >
           <ul className="flex flex-col text-xl md:text-2xl xl:text-3xl 2xl:text-4xl items-center justify-center z-10 text-primary px-auto py-24">
             <li className="hover:text-secondary hover:bg-primary w-[100%] flex justify-center items-center  cursor-pointer py-2 active:bg-primary active:text-red">
