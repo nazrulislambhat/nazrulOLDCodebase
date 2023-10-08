@@ -1,7 +1,7 @@
 import logoSrc from '../public/logo5transparent.webp';
 import Image from 'next/image';
 import { Instrument_Sans, Silkscreen } from 'next/font/google';
-import Link from 'next/link';
+
 const instrument = Instrument_Sans({ subsets: ['latin'] });
 
 const silk = Silkscreen({
@@ -11,16 +11,16 @@ const silk = Silkscreen({
 
 export default function Hero() {
   return (
-    <div className="relative bg-primary flex flex-col items-center">
-      <div className="flex gap-2 flex-col text-center justify-center items-center py-12 px-12 xl:px-24 xl:py-24 2xl:px-56 2xl:py-24 ">
+    <div className="relative bg-darkGrey flex flex-col items-center  py-12 px-12 xl:px-24 xl:py-24 2xl:px-56 2xl:py-24">
+      <div className="flex gap-2 flex-col text-center justify-center items-center pb-12 ">
         <h1
-          className={`${silk.className} text-[2.5rem] md:text-[3rem] xl:text-[3.5rem] 2xl:text-[4rem] text-secondary`}
+          className={`${silk.className} text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl text-secondary pb-2`}
         >
           Full Stack Engineer
         </h1>
 
         <p
-          className={`${instrument.className} text-lighterGrey text-[.9em] md:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem] `}
+          className={`${instrument.className} text-lighterGrey text-xs md:text-sm xl:text-base `}
         >
           I have a passion for developing comprehensive and scalable full-stack
           products that deliver outstanding user experiences.
