@@ -1,37 +1,87 @@
-import logoSrc from '../public/logo5transparent.webp';
+import linkedinBlackIcon from '../public/linkedin-black.svg';
+import instagramBlackIcon from '../public/instagram-black.svg';
+import githubBlackIcon from '../public/github-black.svg';
+import twitterBlackIcon from '../public/twitter-black.svg';
 import Image from 'next/image';
-import { Instrument_Sans, Bai_Jamjuree } from 'next/font/google';
 
-const instrument = Instrument_Sans({ subsets: ['latin'] });
-const jam500 = Bai_Jamjuree({ subsets: ['latin'], weight: '500' });
-const jam700 = Bai_Jamjuree({ subsets: ['latin'], weight: '700' });
+import Link from 'next/link';
+
+import { Inter_Tight } from 'next/font/google';
+const inter = Inter_Tight({ subsets: ['latin'] });
 
 export default function Hero() {
   return (
-    <div className="relative bg-primary flex flex-col xl:flex-col text-center overflow-hidden items-center justify-between pt-24 px-12 xl:px-24 xl:pt-24 2xl:px-56 2xl:pt-24">
-      <div className="flex gap-2 flex-col justify-center xl:max-w-[60%] pb-12">
-        <h1
-          className={`${jam500.className} text-4xl md:text-5xl font-bold xl:text-6xl 2xl:text-6xl text-secondary pb-2 selection:bg-secondary selection:text-primary`}
-        >
-          Full Stack Engineer.
+    <div className="relative h-fit flex flex-col  px-6 py-24 sm:px-8 sm:py-24 md:py-30 lg:px-16 lg:py-36 xl:px-24 xl:py-36">
+      <div className=" pb-20 xl:pb-24 relative">
+        <h1 className="font-bold leading-10 max-w-[90%] text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-terinary selection:bg-terinary selection:text-background">
+          I`m a Full Stack Engineer who`s dedicated to crafting
+          <span className="text-primary selection:bg-primary selection:text-background">
+            {' '}
+            outstanding software solutions.
+          </span>
         </h1>
 
         <p
-          className={`${instrument.className} text-lighterGrey xl:max-w-[90%] text-xs md:text-sm xl:text-base selection:bg-secondary selection:text-primary`}
+          className={`${inter.className} absolute right-0 bottom-6 text-terinary xl:max-w-[50%]  text-sm md:text-sm xl:text-base selection:bg-terinary selection:text-background `}
         >
           I have a passion for developing comprehensive and scalable full-stack
           products that deliver outstanding user experiences.
         </p>
       </div>
 
-      <div className="relative  w-[70%] xl:w-[512px]  flex justify-center">
-        <Image
-          src={logoSrc}
-          alt="Nazrul Islam Photo"
-          width={512}
-          height={512}
-          className="relative z-6"
-        />
+      <div className="social-links-cta relative flex items-center mt-4 justify-between">
+        <ul className="flex gap-4">
+          <li>
+            <Link href="https://instagram.com/nazrulislambhat">
+              <Image
+                src={instagramBlackIcon}
+                alt="logo"
+                width={512}
+                height={512}
+                className="cursor-pointer w-[30px] h-[30px] hover:scale-110"
+              />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://linkedin.com/in/nazrulislambhat">
+              <Image
+                src={linkedinBlackIcon}
+                alt="logo"
+                width={512}
+                height={512}
+                className="cursor-pointer w-[30px] h-[30px] hover:scale-110"
+              />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://twitter.com/nazrulislambhat">
+              <Image
+                src={twitterBlackIcon}
+                alt="logo"
+                width={512}
+                height={512}
+                className="cursor-pointer w-[30px] h-[30px] hover:scale-110"
+              />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://github.com/nazrulislambhat">
+              <Image
+                src={githubBlackIcon}
+                alt="logo"
+                width={512}
+                height={512}
+                className="cursor-pointer w-[30px] h-[30px] hover:scale-110"
+              />
+            </Link>
+          </li>
+        </ul>
+
+        <button
+          className={`${inter.className} flex items-center gap-2 after:content-['-->'] bg-primary px-5 py-3.5 rounded-full font-bold text-secondary text-base border-2  hover:bg-terinary  hover:text-background `}
+        >
+          <Link href="/connect">Let`s Connect</Link>
+        </button>
       </div>
     </div>
   );
