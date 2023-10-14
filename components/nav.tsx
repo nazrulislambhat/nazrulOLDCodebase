@@ -27,32 +27,32 @@ export default function Navigation() {
       </button>
       {menuOpen && (
         <div
-          className={`${inter.className} flex justify-center xl:justify-start bg-terinary absolute right-0 top-14 w-[93vw] h-[80vh] bg-lighterGrey rounded-lg  overflow-y-hidden overflow-x-hidden z-10`}
+          className={`${inter.className} flex justify-center items-center xl:items-start xl:justify-start flex-col bg-terinary absolute right-0 top-14 w-[88vw] h-fit bg-lighterGrey rounded-lg  overflow-y-hidden overflow-x-hidden z-10`}
         >
-          <ul className="relative overflow-hidden xl:left-12 justify-center  flex flex-col text-2xl md:text-3xl lg:text-4xl xl:text-5xl z-10 text-white px-auto py-12">
-            <li className="hover:text-secondary hover:underline tracking-wide  w-[100%] flex justify-center items-center  cursor-pointer py-2 active:text-red">
+          <ul className="relative overflow-hidden xl:left-12 flex flex-col text-2xl md:text-3xl lg:text-4xl xl:text-5xl z-10 text-secondary py-12">
+            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
               <Link href="/">Home</Link>
             </li>
-            <li className="hover:text-secondary hover:underline tracking-wide  w-[100%] flex justify-center items-center  cursor-pointer py-2 active:text-red">
+            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
               <Link href="/about">About</Link>
             </li>
-            <li className="hover:text-secondary hover:underline tracking-wide  w-[100%] flex justify-center items-center  cursor-pointer py-2 active:text-red">
+            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
               <Link href="/contact">Contact</Link>
             </li>
-            <li className="hover:text-secondary hover:underline tracking-wide  w-[100%] flex justify-center items-center  cursor-pointer py-2 active:text-red">
+            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
               <Link href="/portfolio">Portfolio</Link>
             </li>
-            <li className="hover:text-secondary  hover:underline tracking-wide  w-[100%] flex justify-center items-center  cursor-pointer py-2 active:text-red">
+            <li className="hover:text-background  hover:underline tracking-wide justify-center xl:justify-start  w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
               <Link href="/privacy">Privacy</Link>
             </li>
-            <li className="hover:text-secondary hover:underline tracking-wide  w-[100%] flex justify-center items-center  cursor-pointer py-2 active:text-red">
+            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
               <Link href="/faqs">FAQs</Link>
             </li>
-            <li className="hover:text-secondary hover:underline tracking-wide  w-[100%] flex justify-center items-center  cursor-pointer py-2 active:text-red">
+            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
               <Link href="/terms">Terms</Link>
             </li>
           </ul>
-          <div className="social-links-cta absolute flex items-center  mt-4 justify-between xl:right-12 bottom-12 ">
+          <div className="social-links-cta relative flex items-center justify-between bottom-6 right-0 xl:right-12 xl:left-[85%] xl:bottom-12 ">
             <ul className="flex gap-4">
               <li>
                 <Link href="https://instagram.com/nazrulislambhat">

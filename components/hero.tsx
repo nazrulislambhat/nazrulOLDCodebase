@@ -28,7 +28,7 @@ export default function Hero() {
         </h1>
 
         <p
-          className={`${inter.className} absolute right-0 bottom-6 text-terinary xl:max-w-[50%]  text-sm md:text-sm xl:text-lg selection:bg-terinary selection:text-background `}
+          className={`${inter.className} absolute right-0 bottom-6 text-terinary xl:max-w-[50%]  text-sm md:text-sm xl:text-base selection:bg-terinary selection:text-background `}
         >
           I have a passion for developing comprehensive and scalable full-stack
           products that deliver outstanding user experiences.
@@ -83,7 +83,7 @@ export default function Hero() {
           </li>
         </ul>
         <button
-          className={`${inter.className} flex items-center gap-2 after:content-['-->'] bg-primary px-5 py-3.5 rounded-full font-bold text-background text-base border-2  hover:bg-terinary  hover:text-background `}
+          className={`${inter.className} flex items-center gap-2 after:content-['-->'] bg-primary px-5 py-3.5 rounded-full font-bold text-secondary text-base border-2  hover:bg-terinary  hover:text-background `}
         >
           <Link href="/connect">Let`s Connect</Link>
         </button>
