@@ -9,33 +9,13 @@ import { Inter_Tight } from 'next/font/google';
 const inter = Inter_Tight({ subsets: ['latin'] });
 
 export default function About() {
-  const [scrollingUp, setScrollingUp] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrollingUp(true);
-      } else {
-        setScrollingUp(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -50 }}
       transition={{ type: 'tween', duration: 2 }}
-      className={`relative rounded-xl border-2 border-terinary my-4 bg-secondary h-fit justify-between gap-12 xl:gap-24 px-6 py-24 sm:px-8 sm:py-24 md:py-30 lg:px-16 lg:py-36 xl:px-24 xl:py-36 flex flex-col xl:flex-row items-center overflow-hidden ${
-        scrollingUp ? 'scrolling-up' : ''
-      }`}
+      className={`relative rounded-xl border-2 border-terinary my-4 bg-secondary h-fit justify-between gap-12 xl:gap-24 px-6 py-24 sm:px-8 sm:py-24 md:py-30 lg:px-16 lg:py-36 xl:px-24 xl:py-36 flex flex-col xl:flex-row items-center overflow-hidden`}
     >
       <div className="left bg-primary rounded-xl">
         <Image
