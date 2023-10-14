@@ -27,7 +27,7 @@ export default function Navigation() {
       </button>
       {menuOpen && (
         <div
-          className={`${inter.className} flex justify-center items-center xl:items-start xl:justify-start flex-col bg-terinary absolute right-0 top-14 h-fit rounded-lg w-[88vw] xl:w-[82vw] overflow-y-hidden overflow-x-hidden z-10`}
+          className={`${inter.className} flex justify-center items-center xl:items-start xl:justify-start flex-col bg-terinary absolute right-0 top-14 h-fit rounded-lg w-[88vw] xl:w-[1250px] overflow-y-hidden overflow-x-hidden z-10`}
         >
           <ul className="relative overflow-hidden xl:left-12 flex flex-col text-2xl md:text-3xl lg:text-4xl xl:text-4xl z-10 text-secondary py-12">
             <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start uppercase w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
