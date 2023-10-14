@@ -1,19 +1,19 @@
 'use client';
 import Nav from './nav';
 import Link from 'next/link';
-import { Instrument_Sans, Bai_Jamjuree } from 'next/font/google';
+import { Inter_Tight } from 'next/font/google';
 
-const instrument = Instrument_Sans({ subsets: ['latin'] });
-const jam500 = Bai_Jamjuree({ subsets: ['latin'], weight: '500' });
-const jam700 = Bai_Jamjuree({ subsets: ['latin'], weight: '700' });
+const inter = Inter_Tight({ subsets: ['latin'] });
 
 export default function Header() {
   return (
-    <header className="flex justify-between relative items-center bg-primary px-12 xl:px-24 2xl:px-56">
-      <div className="logo  items-center bg-primary  py-4">
+    <header className="flex border-b-2 border-terinary justify-between relative items-center px-6 py-4 sm:px-8 lg:px-16 xl:px-24 ">
+      <div className="logo  items-center">
         <Link href="/" passHref>
-          <p className={`${jam700.className} text-3xl xl:text-4xl text-bg-gradient`}>
-            NAZRUL
+          <p
+            className={`${inter.className} uppercase font-bold text-3xl xl:text-4xl text-terinary hover:text-primary `}
+          >
+            NAZ<span className="text-primary hover:text-terinary">RUL</span>
           </p>{' '}
         </Link>
       </div>
