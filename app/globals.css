@@ -12,3 +12,14 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+.menu-icon::before {
+  content: '';
+  padding: 4px;
+  max-width: 4px;
+  height: 4px;
+  transform: rotate(45deg);
+  width: 100%;
+  height: 4px;
+  border: 1px solid #fcfdaf;
+  margin: 0px 8px;
+}
