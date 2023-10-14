@@ -5,11 +5,9 @@ import imageSrc from '../public/home-image.webp';
 import { Inter_Tight } from 'next/font/google';
 const inter = Inter_Tight({ subsets: ['latin'] });
 
-
-
 export default function About() {
   return (
-    <div className="relative border-terinary border-b-2 h-fit justify-between gap-12 xl:gap-24 px-6 py-24 sm:px-8 sm:py-24 md:py-30 lg:px-16 lg:py-36 xl:px-24 xl:py-36 flex flex-col xl:flex-row items-center overflow-hidden">
+    <div className="relative rounded-xl border-2 border-terinary my-4 bg-secondary h-fit justify-between gap-12 xl:gap-24 px-6 py-24 sm:px-8 sm:py-24 md:py-30 lg:px-16 lg:py-36 xl:px-24 xl:py-36 flex flex-col xl:flex-row items-center overflow-hidden">
       <div className="left bg-primary rounded-xl">
         <Image
           src={imageSrc}

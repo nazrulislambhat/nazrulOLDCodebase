@@ -20,35 +20,35 @@ export default function Navigation() {
   return (
     <div className="relative">
       <button
-        className="z-10 relative text-4xl text-terinary  flex items-center justify-center hover:text-primary "
+        className="z-10 relative text-4xl text-terinary flex items-center justify-center hover:text-primary "
         onClick={toggleMenu}
       >
         {menuOpen ? <CgClose /> : <CgMenuRight />}
       </button>
       {menuOpen && (
         <div
-          className={`${inter.className} flex justify-center items-center xl:items-start xl:justify-start flex-col bg-terinary absolute right-0 top-14 w-[88vw] h-fit bg-lighterGrey rounded-lg  overflow-y-hidden overflow-x-hidden z-10`}
+          className={`${inter.className} flex justify-center items-center xl:items-start xl:justify-start flex-col bg-terinary absolute right-0 top-14 h-fit rounded-lg w-[88vw] xl:w-[82vw] overflow-y-hidden overflow-x-hidden z-10`}
         >
-          <ul className="relative overflow-hidden xl:left-12 flex flex-col text-2xl md:text-3xl lg:text-4xl xl:text-5xl z-10 text-secondary py-12">
-            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
+          <ul className="relative overflow-hidden xl:left-12 flex flex-col text-2xl md:text-3xl lg:text-4xl xl:text-4xl z-10 text-secondary py-12">
+            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start uppercase w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
               <Link href="/">Home</Link>
             </li>
-            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
+            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start uppercase w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
               <Link href="/about">About</Link>
             </li>
-            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
+            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start uppercase w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
               <Link href="/contact">Contact</Link>
             </li>
-            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
+            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start uppercase w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
               <Link href="/portfolio">Portfolio</Link>
             </li>
-            <li className="hover:text-background  hover:underline tracking-wide justify-center xl:justify-start  w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
+            <li className="hover:text-background  hover:underline tracking-wide justify-center xl:justify-start uppercase  w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
               <Link href="/privacy">Privacy</Link>
             </li>
-            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
+            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start uppercase w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
               <Link href="/faqs">FAQs</Link>
             </li>
-            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
+            <li className="hover:text-background hover:underline tracking-wide justify-center xl:justify-start uppercase w-[100%] flex items-center  cursor-pointer py-2 active:text-red">
               <Link href="/terms">Terms</Link>
             </li>
           </ul>
