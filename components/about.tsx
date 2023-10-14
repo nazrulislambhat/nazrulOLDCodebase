@@ -35,7 +35,7 @@ export default function About() {
           several countries.
         </p>
         <button
-          className={`${inter.className} flex items-center gap-1 after:content-['👨🏼‍💻'] font-bold text-primary text-base hover:text-terinary hover:scale-110 active:text-red border-terinary`}
+          className={`${inter.className} flex items-center gap-1 after:content-['ツ'] font-bold text-primary text-base hover:text-terinary hover:scale-110 active:text-red border-terinary`}
         >
           <Link href="/about">About Me</Link>
         </button>
