@@ -1,9 +1,11 @@
+'use client';
 import linkedinBlackIcon from '../public/linkedin-black.svg';
 import instagramBlackIcon from '../public/instagram-black.svg';
 import githubBlackIcon from '../public/github-black.svg';
 import twitterBlackIcon from '../public/twitter-black.svg';
 import Image from 'next/image';
-
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 import { Inter_Tight } from 'next/font/google';
@@ -11,7 +13,13 @@ const inter = Inter_Tight({ subsets: ['latin'] });
 
 export default function Hero() {
   return (
-    <div className="relative h-fit flex flex-col  px-6 py-24 sm:px-8 sm:py-24 md:py-30 lg:px-16 lg:py-36 xl:px-24 xl:py-36">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -50 }}
+      transition={{ type: 'tween', duration: 2 }}
+      className={`relative h-fit flex flex-col  px-6 py-24 sm:px-8 sm:py-24 md:py-30 lg:px-16 lg:py-36 xl:px-24 xl:py-36 `}
+    >
       <div className=" pb-20 xl:pb-24 relative">
         <h1 className="font-bold leading-10 max-w-[90%] text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-terinary selection:bg-terinary selection:text-background">
           I`m a Full Stack Engineer who`s dedicated to crafting
@@ -83,6 +91,6 @@ export default function Hero() {
           <Link href="/connect">Let`s Connect</Link>
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 }
