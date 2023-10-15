@@ -1,6 +1,7 @@
 import About from '@/components/about';
 import Header from '@/components/header';
 import Hero from '@/components/hero';
+import Card from '@/components/portfolioCard';
 
 export default function Home() {
   return (
