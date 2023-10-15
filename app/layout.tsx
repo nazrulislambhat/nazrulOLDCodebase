@@ -1,5 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import { Providers } from './providers';
+import { Analytics } from '@vercel/analytics/react';
 
 import { Inter_Tight } from 'next/font/google';
 const inter = Inter_Tight({ subsets: ['latin'] });
@@ -17,7 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-background`}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>{children}</div>
+        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+          <Providers>{children}</Providers>
+        </div>
       </body>
     </html>
   );
