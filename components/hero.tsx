@@ -4,9 +4,9 @@ import instagramBlackIcon from '../public/instagram-black.svg';
 import githubBlackIcon from '../public/github-black.svg';
 import twitterBlackIcon from '../public/twitter-black.svg';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { Button } from '@nextui-org/button';
 
 import { Inter_Tight } from 'next/font/google';
 const inter = Inter_Tight({ subsets: ['latin'] });
@@ -85,11 +85,12 @@ export default function Hero() {
           </li>
         </ul>
 
-        <button
-          className={`${inter.className} flex items-center gap-2 after:content-['🡭'] bg-primary px-5 py-3.5 rounded-full font-bold text-secondary text-base border-2  hover:bg-terinary  hover:text-background `}
+        <Button
+          className={`${inter.className} flex items-center gap-2 after:content-['🠪'] bg-primary px-5 py-6  font-bold text-secondary text-base border-2  hover:bg-terinary  hover:text-background `}
+          radius="full"
         >
           <Link href="/connect">Let`s Connect</Link>
-        </button>
+        </Button>
       </div>
     </motion.div>
   );
