@@ -22,19 +22,22 @@ export default function App() {
   ];
 
   return (
-    <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+    <Navbar
+      isBlurred={false}
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+    >
       <NavbarContent justify="start">
         <NavbarMenuToggle
-          className="font-bold"
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
         />
       </NavbarContent>
 
-      <NavbarMenu className="flex justify-center overflow-y-hidden items-center">
+      <NavbarMenu className="flex   justify-center items-center xl:items-left max-h-[70vh] xl:h-[100vh] ">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={item.text}>
             <Link
-              className="w-full text-terinary hover:text-primary hover:underline tracking-wide justify-center xl:justify-start uppercase flex items-center  cursor-pointer py-2 active:text-red text-xl md:text-3xl lg:text-4xl xl:text-4xl  "
+              className="w-full text-terinary hover:text-primary hover:underline tracking-wide xl:justify-start uppercase flex items-center  cursor-pointer py-2 active:text-red text-xl md:text-3xl lg:text-4xl xl:text-4xl  "
               color={
                 index === 2
                   ? 'warning'
