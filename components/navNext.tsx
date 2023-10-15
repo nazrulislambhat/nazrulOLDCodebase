@@ -33,7 +33,7 @@ export default function App() {
         />
       </NavbarContent>
 
-      <NavbarMenu className="flex  justify-center items-center xl:items-left max-h-[100vh] xl:h-[100vh] ">
+      <NavbarMenu className="flex  justify-center items-center xl:items-left max-h-[100vh] xl:h-[100vh] absolute top-0 ">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={item.text}>
             <Link
