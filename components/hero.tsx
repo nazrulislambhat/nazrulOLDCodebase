@@ -86,7 +86,7 @@ export default function Hero() {
         </ul>
 
         <Button
-          className={`${inter.className} flex items-center gap-2 after:content-['🠪'] bg-primary px-5 py-6  font-bold text-secondary text-base border-2  hover:bg-terinary  hover:text-background `}
+          className={`${inter.className} flex items-center gap-2 after:content-['->'] bg-primary px-5 py-6  font-bold text-secondary text-base border-2  hover:bg-terinary  hover:text-background `}
           radius="full"
         >
           <Link href="/connect">Let`s Connect</Link>
