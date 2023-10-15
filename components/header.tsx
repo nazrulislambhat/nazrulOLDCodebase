@@ -1,5 +1,5 @@
 'use client';
-import Nav2 from './nav2';
+import NavNext from './navNext';
 import Link from 'next/link';
 import { Inter_Tight } from 'next/font/google';
 
@@ -19,7 +19,7 @@ export default function Header() {
       </div>
 
       <div className="nav">
-        <Nav2 />
+        <NavNext />
       </div>
     </header>
   );
