@@ -75,11 +75,12 @@ export default function Hero() {
           <li>
             <Link href="https://github.com/nazrulislambhat">
               <Image
-                src={githubBlackIcon}
+                src={instagramBlackIcon}
                 alt="logo"
                 width={512}
                 height={512}
                 className="cursor-pointer w-[30px] h-[30px] hover:scale-110"
+                loading="lazy"
               />
             </Link>
           </li>
