@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Providers } from './providers';
+import { Analytics } from '@vercel/analytics/react';
 
 import { Inter_Tight } from 'next/font/google';
 const inter = Inter_Tight({ subsets: ['latin'] });
