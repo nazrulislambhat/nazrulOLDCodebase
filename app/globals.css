@@ -23,3 +23,10 @@
   border: 1px solid #fcfdaf;
   margin: 0px 8px;
 }
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/InterTight-VariableFont_wght.ttf') format('ttf');
+}
