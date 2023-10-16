@@ -16,7 +16,7 @@ export default function Card({
 }: CardProps) {
   return (
     <div className="portfolio-card rounded-xl ">
-      <div className=" mb-4 bg-white p-8 rounded-xl">
+      <div className=" mb-4 bg-whitenpm p-8 rounded-xl">
         <Image
           src={cardImage}
           alt={cardName}

@@ -14,26 +14,27 @@ export default function Portfolio() {
         <h1 className="portfolio-title pb-8 text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-terinary font-bold selection:bg-terinary selection:text-background">
           Explore my most recent creations
         </h1>
-        <div className="portfolio-cards grid grid-cols-1 md:grid-cols-2 justify-items-center gap-8">
-          <div className="col-span-1">
-            <PortfolioCard
-              cardImage={portfolioEight as any}
-              cardName="Mehandi by Sana"
-              cardStatus="Active"
-              cardLink="https://mehandibysana.com/"
-            />
-          </div>
+        <div className="portfolio-cards flex flex-wrap flex-col items-center justify-center gap-8">
+          <div className="flex items-center flex-col md:flex-row">
+            <div>
+              <PortfolioCard
+                cardImage={portfolioEight as any}
+                cardName="Mehandi by Sana"
+                cardStatus="Active"
+                cardLink="https://mehandibysana.com/"
+              />
+            </div>
 
-          <div className="col-span-1">
-            <PortfolioCard
-              cardImage={portfolioThree as any}
-              cardName="Nazrul Islam"
-              cardStatus="Development"
-              cardLink="https://nazrulislam.dev/"
-            />
+            <div>
+              <PortfolioCard
+                cardImage={portfolioThree as any}
+                cardName="Nazrul Islam"
+                cardStatus="Development"
+                cardLink="https://nazrulislam.dev/"
+              />
+            </div>
           </div>
-
-          <div className="col-span-2 md:col-span-2">
+          <div className="max-w-[100%]">
             <PortfolioCard
               cardImage={portfolioFive as any}
               cardName="FossNoobs"
@@ -42,21 +43,23 @@ export default function Portfolio() {
             />
           </div>
 
-          <div className="col-span-1">
-            <PortfolioCard
-              cardImage={portfolioSix as any}
-              cardName="IFED Trust"
-              cardStatus="Active"
-              cardLink="https://ifedtrust.com/"
-            />
-          </div>
-          <div className="col-span-1">
-            <PortfolioCard
-              cardImage={portfolioOne as any}
-              cardName="Get Your Rentals"
-              cardStatus="Expired"
-              cardLink="https://getyourrentals.com/"
-            />
+          <div className="flex items-center flex-col md:flex-row">
+            <div>
+              <PortfolioCard
+                cardImage={portfolioSix as any}
+                cardName="IFED Trust"
+                cardStatus="Active"
+                cardLink="https://ifedtrust.com/"
+              />
+            </div>
+            <div>
+              <PortfolioCard
+                cardImage={portfolioOne as any}
+                cardName="Get Your Rentals"
+                cardStatus="Expired"
+                cardLink="https://getyourrentals.com/"
+              />
+            </div>
           </div>
         </div>
       </div>
