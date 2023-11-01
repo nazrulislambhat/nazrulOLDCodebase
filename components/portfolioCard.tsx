@@ -15,8 +15,8 @@ export default function Card({
   cardLink,
 }: CardProps) {
   return (
-    <div className="portfolio-card rounded-xl ">
-      <div className=" mb-4 bg-whitenpm p-8 rounded-xl">
+    <div className="portfolio-card  p-8">
+      <div className=" mb-4 rounded-xl">
         <Image
           src={cardImage}
           alt={cardName}
@@ -25,9 +25,9 @@ export default function Card({
           className="card-image rounded-xl"
         />
       </div>
-      <div className="flex items-center justify-between px-4">
+      <div className="flex items-center justify-between">
         <div className="card-content ">
-          <h2 className="card-name pb-2 text-2xl font-semibold text-terinary selection:bg-terinary selection:text-background">
+          <h2 className="card-name pb-4 text-2xl font-semibold text-terinary selection:bg-terinary selection:text-background">
             {cardName}
           </h2>
           <p

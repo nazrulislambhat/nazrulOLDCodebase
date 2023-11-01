@@ -15,7 +15,7 @@ export default function Portfolio() {
           Explore my most recent creations
         </h1>
         <div className="portfolio-cards flex flex-wrap flex-col items-center justify-center gap-8">
-          <div className="flex items-center flex-col md:flex-row">
+          <div className="flex items-center flex-col md:flex-row gap-4">
             <div>
               <PortfolioCard
                 cardImage={portfolioEight as any}
@@ -43,7 +43,7 @@ export default function Portfolio() {
             />
           </div>
 
-          <div className="flex items-center flex-col md:flex-row">
+          <div className="flex items-center flex-col md:flex-row gap-4">
             <div>
               <PortfolioCard
                 cardImage={portfolioSix as any}
