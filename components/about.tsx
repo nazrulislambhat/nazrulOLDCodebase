@@ -4,6 +4,7 @@ import Image from 'next/image';
 import imageSrc from '../public/home-image.webp';
 import { motion } from 'framer-motion';
 
+
 import { Inter_Tight } from 'next/font/google';
 const inter = Inter_Tight({ subsets: ['latin'] });
 
@@ -14,7 +15,7 @@ export default function About() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -50 }}
       transition={{ type: 'tween', duration: 2 }}
-      className={`relative xl:rounded-xl border-y-2 xl:border-2 border-terinary my-8 bg-background h-fit justify-between gap-12 xl:gap-24 px-6 py-24 sm:px-8 sm:py-24 md:py-30 lg:px-16 lg:py-36 xl:px-24 xl:py-36 flex flex-col xl:flex-row items-center overflow-hidden`}
+      className={`relative xl:rounded-xl border-y-2 xl:border-2 border-terinary my-4 bg-background h-fit justify-between gap-12 xl:gap-24 px-6 py-24 sm:px-8 sm:py-24 md:py-30 lg:px-16 lg:py-36 xl:px-24 xl:py-36 flex flex-col xl:flex-row items-center overflow-hidden`}
     >
       <div className="left bg-primary rounded-xl hover:bg-background">
         <Image
