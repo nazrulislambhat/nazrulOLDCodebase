@@ -1,7 +1,7 @@
 import About from '@/components/about';
 import Header from '@/components/header';
 import Hero from '@/components/hero';
-import Card from '@/components/portfolioCard';
+import Portfolio from '@/components/portfolio';
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <Portfolio />
     </main>
   );
 }
