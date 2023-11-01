@@ -75,7 +75,7 @@ export default function Hero() {
           <li>
             <Link href="https://github.com/nazrulislambhat">
               <Image
-                src={instagramBlackIcon}
+                src={githubBlackIcon}
                 alt="logo"
                 width={512}
                 height={512}
