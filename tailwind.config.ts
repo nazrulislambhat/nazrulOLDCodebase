@@ -15,6 +15,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      content: {
+        link: 'url("/public/down.png")',
+      },
       colors: {
         primary: '#3454d1',
         secondary: '#fcfdaf',
