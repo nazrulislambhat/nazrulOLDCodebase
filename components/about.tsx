@@ -16,7 +16,7 @@ export default function About() {
       transition={{ type: 'tween', duration: 2 }}
       className={`relative xl:rounded-xl border-y-2 xl:border-2 border-terinary my-8 bg-background h-fit justify-between gap-12 xl:gap-24 px-6 py-24 sm:px-8 sm:py-24 md:py-30 lg:px-16 lg:py-36 xl:px-24 xl:py-36 flex flex-col xl:flex-row items-center overflow-hidden`}
     >
-      <div className="left bg-primary rounded-xl hover:bg-background">
+      <div className="left bg-primary rounded-xl hover:bg-background hover:border-terinary hover:border ">
         <Image
           src={imageSrc}
           alt="logo"
@@ -33,9 +33,7 @@ export default function About() {
           Over a decade of experience in building products for clients across
           several countries.
         </p>
-        <button
-          className={`${inter.className} flex items-center gap-1 after:content-['ツ'] font-bold text-primary text-base hover:text-terinary hover:scale-110 active:text-red border-terinary`}
-        >
+        <button className="flex items-center gap-1 font-bold underline underline-offset-4 text-primary text-base hover:text-red active:text-red border-terinary">
           <Link href="/about">About Me</Link>
         </button>
       </div>
