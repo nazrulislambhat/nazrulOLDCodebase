@@ -24,6 +24,7 @@ export default function RootLayout({
         <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
           <Providers>{children}</Providers>
         </div>
+        <Analytics />
       </body>
     </html>
   );
