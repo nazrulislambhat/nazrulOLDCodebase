@@ -7,7 +7,6 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Button } from '@nextui-org/button';
-
 import { Inter_Tight } from 'next/font/google';
 const inter = Inter_Tight({ subsets: ['latin'] });
 
@@ -86,7 +85,7 @@ export default function Hero() {
           </li>
         </ul>
 
-        <Button className="flex items-center gap-2 after:content-['->'] text-secondary px-5 py-6  font-bold bg-primary text-base border-2 border-secondary  hover:bg-terinary hover:text-white hover:border-white hover:scale-110">
+        <Button className={`${inter.className} text-secondary px-5 py-6  font-bold bg-primary text-sm border-2 border-secondary  hover:bg-terinary hover:text-white hover:border-white hover:scale-110`}>
           <Link href="/connect">Let`s Connect</Link>
         </Button>
       </div>
